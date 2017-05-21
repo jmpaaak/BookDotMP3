@@ -768,7 +768,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 		printf("y: %d\n", y);
 	}
 
-	fwrite(displayFrame, (bmpInfoHeader.biSizeImage*2)-1, 1, fp);
+	fwrite(displayFrame, bmpInfoHeader.biSizeImage, 1, fp);
 	free(displayFrame);
 	fclose(fp);
 	printf("comp!!!\n");
