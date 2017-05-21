@@ -712,6 +712,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	bmpHeader.bfSize = 640*480*3+54; // resolution * rgb + two header
 	bmpHeader.bfOffBits = 54; // starting place of color bytes
 
+	printf("iden comp!!!\n");
 	// set DIB header
 	memset(&bmpInfoHeader, 0, sizeof(bmpInfoHeader)); // init 0
 	bmpInfoHeader.biSize = 40;
@@ -725,6 +726,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	fwrite((void*)&bmpHeader, sizeof(bmpHeader), 1, fp);
 	fwrite((void*)&bmpInfoHeader, sizeof(bmpHeader), 1, fp);
 
+	printf("DIB comp!!!\n");
 	// write color bytes
 	// fwrite(bmpHeader, sizeof(bmpHeader), 1, fp);
 
@@ -771,6 +773,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	fwrite(videptrTemp, sizeof(videptrTemp), 1, fp);
 	free(videptrTemp);
 	fclose(fp);
+	printf("comp!!!\n");
 }
 
 
