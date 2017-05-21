@@ -764,14 +764,12 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			temp += 480*3;
 
 			x+=4;
-
-			printf("x: %d\n", x);
 		}
 		printf("y: %d\n", y);
 	}
 
 	fwrite(displayFrame, sizeof(displayFrame), 1, fp);
-	free(videptrTemp);
+	free(displayFrame);
 	fclose(fp);
 	printf("comp!!!\n");
 }
