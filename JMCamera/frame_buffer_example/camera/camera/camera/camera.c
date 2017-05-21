@@ -733,11 +733,12 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	int    x,y;
 	int lineLeng ;
 	unsigned short *videptrTemp;
-	unsigned short *displayFrame = (unsigned short*) malloc( (bmpInfoHeader.biSizeImage)*2 );
+	unsigned char *displayFrame = (unsigned char*) malloc( (bmpInfoHeader.biSizeImage) );
 	unsigned short *videoptr = videoFrame;
 	int temp;
 	lineLeng = dFrameWidth*4;
 
+	printf("Mem res comp!!!\n");
 	for ( y = 0 ; y < videoHeight ; y++ )
 	{
 		for(x = 0; x < videoWidth ;)
@@ -767,7 +768,10 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
 			x+=3;
+
+			printf("x: %d\n", x);
 		}
+		printf("y: %d\n", y);
 	}
 
 	fwrite(displayFrame, sizeof(displayFrame), 1, fp);
