@@ -739,11 +739,13 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	printf("Mem res comp!!!\n");
 	for ( y = 0 ; y < videoHeight; y++ )
 	{
-		temp = y;
+		temp = 3*y;
 		x = 0;
 		for(x = 0; x < videoWidth;) 
 		{
-			videptrTemp = videoptr + videoWidth*y + x;
+			if(x==(videoWidth-1))
+				printf("x: %d y: %d\n", x, y);	
+			videptrTemp = videoptr + videoWidth*y + (x+1);
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
