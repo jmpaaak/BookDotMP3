@@ -723,7 +723,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	bmpInfoHeader.biSizeImage = 640*480*3; //  # of color bytes 
 
 	fwrite((void*)&bmpHeader, sizeof(bmpHeader), 1, fp);
-	fwrite((void*)&bmpInfoHeader, sizeof(bmpHeader), 1, fp);
+	fwrite((void*)&bmpInfoHeader, sizeof(bmpInfoHeader), 1, fp);
 
 	printf("DIB comp!!!\n");
 	// write color bytes
@@ -768,7 +768,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 		printf("y: %d\n", y);
 	}
 
-	fwrite(displayFrame, sizeof(displayFrame), 1, fp);
+	fwrite(displayFrame, sizeof((*displayFrame)), 1, fp);
 	free(displayFrame);
 	fclose(fp);
 	printf("comp!!!\n");
