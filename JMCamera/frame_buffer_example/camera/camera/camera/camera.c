@@ -731,7 +731,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	int    x,y;
 	int lineLeng ;
 	unsigned short *videptrTemp;
-	unsigned short *displayFrame = (unsigned short*) malloc( (bmpInfoHeader.biSizeImage) / 2 );
+	unsigned short *displayFrame = (unsigned short*) malloc( (bmpInfoHeader.biSizeImage) );
 	unsigned short *videoptr = videoFrame;
 	int temp;
 	lineLeng = dFrameWidth*4;
