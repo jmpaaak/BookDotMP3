@@ -780,7 +780,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			temp += 480*3;
 			x++;
 
-			if(x % 3 == 0) videoIdx++;
+			if(((x+1) % 4) == 0) videoIdx++;
 			videoIdx++;
 		}
 	}
