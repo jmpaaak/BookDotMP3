@@ -729,7 +729,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	// write color bytes
 	// fwrite(bmpHeader, sizeof(bmpHeader), 1, fp);
 
-	int    x,y;
+	int    x,y, videoIdx=0;
 	int lineLeng ;
 	unsigned short *videptrTemp;
 	unsigned char *displayFrame = (unsigned char*) malloc( (bmpInfoHeader.biSizeImage) );
@@ -739,23 +739,11 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	printf("Mem res comp!!!\n");
 	for ( y = 0 ; y < videoHeight; y++ )
 	{
-		temp = y;
-		for(x = 0; x < videoWidth;)
+		temp = 3*y;
+		for(x = 0; x < videoWidth;) 
 		{
 
-			videptrTemp =  videoptr + videoWidth*y + x ;
-			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
-			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
-			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
-
-			videptrTemp++;
-			temp += 480*3;
-			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
-			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
-			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
-
-			videptrTemp++;
-			temp += 480*3;
+			videptrTemp =  videoptr + videoWidth*y + videoIdx;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
@@ -763,7 +751,22 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			videptrTemp++;
 			temp += 480*3;
 
-			x+=4;
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+
+			videptrTemp++;
+			temp += 480*3;
+
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+
+			videptrTemp++;
+			temp += 480*3;
+			
+			videoIdx+=4;
+			x+=3;
 		}
 		printf("y: %d\n", y);
 	}
