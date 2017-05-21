@@ -12,6 +12,7 @@
 #include "videodev2.h"
 #include "SecBuffer.h"
 #include "camera.h"
+#include "bitmap.h"
 
 
 
@@ -688,6 +689,94 @@ static void DrawFromRGB565(unsigned char *displayFrame, unsigned char *videoFram
 	}
 }
 
+
+////// Jongmin Defined //////
+
+
+void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int videoHeight, \
+				 int dFrameWidth, int dFrameHeight) {
+	BITMAPFILEHEADER bmpHeader;
+	BITMAPINFOHEADER bmpInfoHeader;
+	
+	FILE *fp;
+	fp = fopen(filename, "wb");
+	if(fp == NULL) {
+		printf("FOPEN ERROR\n");
+		return;
+	}
+
+	// identifiers
+	memset(&bmpHeader, 0, sizeof(bmpHeader)); // init 0
+	fputc('B', fp);
+	fputc('M', fp);
+	bmpHeader.bfSize = 640*480*3+54; // resolution * rgb + two header
+	bmpHeader.bfOffBits = 54; // starting place of color bytes
+
+	// set DIB header
+	memset(&bmpInfoHeader, 0, sizeof(bmpInfoHeader)); // init 0
+	bmpInfoHeader.biSize = 40;
+	bmpInfoHeader.biWidth = 480*2;
+	bmpInfoHeader.biHeight = 640*2;
+	bmpInfoHeader.biPlanes = 1;
+	bmpInfoHeader.biBitCount = 24;
+	bmpInfoHeader.biCompression = 0;
+	bmpInfoHeader.biSizeImage = 640*480*3; //  # of color bytes 
+
+	fwrite((void*)&bmpHeader, sizeof(bmpHeader), 1, fp);
+	fwrite((void*)&bmpInfoHeader, sizeof(bmpHeader), 1, fp);
+
+	// write color bytes
+	// fwrite(bmpHeader, sizeof(bmpHeader), 1, fp);
+
+	int    x,y;
+	int lineLeng ;
+	unsigned short *videptrTemp;
+	unsigned short *displayFrame = (unsigned short*) malloc( (bmpInfoHeader.biSizeImage) / 2 );
+	unsigned short *videoptr = videoFrame;
+	int temp;
+	lineLeng = dFrameWidth*4;
+
+	for ( y = 0 ; y < videoHeight ; y++ )
+	{
+		for(x = 0; x < videoWidth ;)
+		{
+
+			videptrTemp =  videoptr + videoWidth*y + x ;
+			temp = y*lineLeng + x*4;
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+
+			videptrTemp++;
+			temp +=4;
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+
+			videptrTemp++;
+			temp +=4;
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+
+			videptrTemp++;
+			temp +=4;
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+			x+=4;
+		}
+	}
+
+	fwrite(videptrTemp, sizeof(videptrTemp), 1, fp);
+	free(videptrTemp);
+	fclose(fp);
+}
+
+
+///// end of Jonmin Def /////
+
+
 #define  FBDEV_FILE "/dev/fb0"
 
 int main(int argc, char **argv)
@@ -751,13 +840,14 @@ int main(int argc, char **argv)
 	CreateCamera(0);
 	startPreview();
 
-	while(1)
-	{
 		ret = fimc_poll(&m_events_c);
 		CHECK_PTR(ret);
 		index = fimc_v4l2_dqbuf(m_cam_fd, 1);
 		//Draw(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
 		//	 CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
+
+		write_bmp("write_bmp_test.bmp", m_buffers_preview[index].virt.p, CAMERA_PREVIEW_WIDTH,\
+		CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
 
 		DrawFromRGB565(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
 		CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
@@ -766,7 +856,7 @@ int main(int argc, char **argv)
 		//	m_buffers_preview[index].size.s);	
 
 		ret = fimc_v4l2_qbuf(m_cam_fd,index);
-	}
+		// sleep(1);
 
 
 
