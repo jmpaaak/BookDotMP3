@@ -693,8 +693,7 @@ static void DrawFromRGB565(unsigned char *displayFrame, unsigned char *videoFram
 ////// Jongmin Defined //////
 
 
-void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int videoHeight, \
-				 int dFrameWidth, int dFrameHeight) {
+void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int videoHeight) {
 	BITMAPFILEHEADER bmpHeader;
 	BITMAPINFOHEADER bmpInfoHeader;
 	
@@ -738,30 +737,32 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	int temp;
 
 	printf("Mem res comp!!!\n");
-	for ( y = 0 ; y < videoWidth; y++ )
+	for ( y = 0 ; y < videoHeight; y++ )
 	{
-		for(x = 0; x < videoHeight;)
+		temp = y*3;
+		for(x = 0; x < videoWidth;)
 		{
 
 			videptrTemp =  videoptr + videoWidth*y + x ;
-			temp +=3;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
 
 			videptrTemp++;
-			temp +=3;
+			temp += 480*3;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
 
 			videptrTemp++;
-			temp +=3;
+			temp += 480*3;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
 
 			videptrTemp++;
+			temp += 480*3;
+
 			x+=4;
 
 			printf("x: %d\n", x);
@@ -848,7 +849,7 @@ int main(int argc, char **argv)
 		//	 CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
 
 		write_bmp("write_bmp_test.bmp", m_buffers_preview[index].virt.p, CAMERA_PREVIEW_WIDTH,\
-		CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
+		CAMERA_PREVIEW_HEIGHT);
 
 		DrawFromRGB565(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
 		CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
