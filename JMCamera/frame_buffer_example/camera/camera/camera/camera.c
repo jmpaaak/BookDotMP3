@@ -715,8 +715,8 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	// set DIB header
 	memset(&bmpInfoHeader, 0, sizeof(bmpInfoHeader)); // init 0
 	bmpInfoHeader.biSize = 40;
-	bmpInfoHeader.biWidth = 640;
-	bmpInfoHeader.biHeight = 480;
+	bmpInfoHeader.biWidth = 480;
+	bmpInfoHeader.biHeight = 640;
 	bmpInfoHeader.biPlanes = 1;
 	bmpInfoHeader.biBitCount = 24;
 	bmpInfoHeader.biCompression = 0;
@@ -751,6 +751,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			videptrTemp++;
 			temp += 480*3;
 
+			printf("temp/3: %d\n", temp/3);
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
@@ -758,6 +759,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			videptrTemp++;
 			temp += 480*3;
 
+			printf("temp/3: %d\n", temp/3);
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
@@ -769,6 +771,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
 
+			printf("temp/3: %d\n", temp/3);
 			x+=4;
 			if(x==videoWidth)
 				printf("x: %d y: %d\n", x, y);	
