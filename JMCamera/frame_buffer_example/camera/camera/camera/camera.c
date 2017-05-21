@@ -739,7 +739,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	printf("Mem res comp!!!\n");
 	for ( y = 0 ; y < videoHeight; y++ )
 	{
-		temp = 3*y;
+		temp = y;
 		x = 0;
 		for(x = 0; x < videoWidth;) 
 		{
