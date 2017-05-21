@@ -733,7 +733,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	int    x,y;
 	int lineLeng ;
 	unsigned short *videptrTemp;
-	unsigned short *displayFrame = (unsigned short*) malloc( (bmpInfoHeader.biSizeImage) );
+	unsigned short *displayFrame = (unsigned short*) malloc( (bmpInfoHeader.biSizeImage)*2 );
 	unsigned short *videoptr = videoFrame;
 	int temp;
 	lineLeng = dFrameWidth*4;
@@ -770,7 +770,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 		}
 	}
 
-	fwrite(videptrTemp, sizeof(videptrTemp), 1, fp);
+	fwrite(displayFrame, sizeof(displayFrame), 1, fp);
 	free(videptrTemp);
 	fclose(fp);
 	printf("comp!!!\n");
@@ -793,7 +793,6 @@ int main(int argc, char **argv)
 	struct  fb_fix_screeninfo fbfix;
 	unsigned char   *fb_mapped;
 	int             mem_size;
-
 
 	if( access(FBDEV_FILE, F_OK) )
 	{
