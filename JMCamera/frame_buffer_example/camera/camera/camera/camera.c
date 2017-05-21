@@ -772,7 +772,6 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			if(x==videoWidth)
 				printf("x: %d y: %d\n", x, y);	
 		}
-		y = 3*y;
 	}
 
 	fwrite(displayFrame, bmpInfoHeader.biSizeImage, 1, fp);
