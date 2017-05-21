@@ -715,8 +715,8 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	// set DIB header
 	memset(&bmpInfoHeader, 0, sizeof(bmpInfoHeader)); // init 0
 	bmpInfoHeader.biSize = 40;
-	bmpInfoHeader.biWidth = 480*2;
-	bmpInfoHeader.biHeight = 640*2;
+	bmpInfoHeader.biWidth = 480;
+	bmpInfoHeader.biHeight = 640;
 	bmpInfoHeader.biPlanes = 1;
 	bmpInfoHeader.biBitCount = 24;
 	bmpInfoHeader.biCompression = 0;
