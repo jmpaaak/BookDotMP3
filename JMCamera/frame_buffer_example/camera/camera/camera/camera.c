@@ -740,7 +740,6 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	for ( y = 0 ; y < videoHeight; y++ )
 	{
 		temp = 3*y;
-		x = 0;
 		for(x = 0; x < videoWidth;) 
 		{
 			videptrTemp = videoptr + videoWidth*y + x;
@@ -751,7 +750,6 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			videptrTemp++;
 			temp += 480*3;
 
-			printf("temp/3: %d\n", temp/3);
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
@@ -759,7 +757,6 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			videptrTemp++;
 			temp += 480*3;
 
-			printf("temp/3: %d\n", temp/3);
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
@@ -771,11 +768,11 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
 
-			printf("temp/3: %d\n", temp/3);
 			x+=4;
 			if(x==videoWidth)
 				printf("x: %d y: %d\n", x, y);	
 		}
+		y = 3*y;
 	}
 
 	fwrite(displayFrame, bmpInfoHeader.biSizeImage, 1, fp);
