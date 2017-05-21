@@ -729,7 +729,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	// write color bytes
 	// fwrite(bmpHeader, sizeof(bmpHeader), 1, fp);
 
-	int    x,y, videoIdx=0;
+	int x,y, videoIdx=0;
 	int lineLeng ;
 	unsigned short *videptrTemp;
 	unsigned char *displayFrame = (unsigned char*) malloc( (bmpInfoHeader.biSizeImage) );
@@ -740,10 +740,10 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	for ( y = 0 ; y < videoHeight; y++ )
 	{
 		temp = 3*y;
-		for(x = 0; x < videoWidth;) 
+/*		for(x = 0; x < videoWidth;) 
 		{
 
-			videptrTemp =  videoptr + videoWidth*y + videoIdx;
+			videptrTemp =  videoptr + videoWidth*y + x;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
@@ -765,10 +765,23 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 			videptrTemp++;
 			temp += 480*3;
 			
-			videoIdx+=4;
-			x+=3;
+			x+=4;
 		}
 		printf("y: %d\n", y);
+*/		
+		videptrTemp =  videoptr + videoWidth*y;
+		while(x != videoHeight) {
+			videptrTemp += videoIdx;
+			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
+			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
+			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
+			videptrTemp++;
+			temp += 480*3;
+			x++;
+
+			if(videoIdx % 3 == 0) videoIdx++;
+			videoIdx++;
+		}
 	}
 
 	fwrite(displayFrame, bmpInfoHeader.biSizeImage, 1, fp);
