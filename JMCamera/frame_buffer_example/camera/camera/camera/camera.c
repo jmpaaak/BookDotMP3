@@ -745,7 +745,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 		{
 			if(x==(videoWidth-1))
 				printf("x: %d y: %d\n", x, y);	
-			videptrTemp = videoptr + videoWidth*y + (x+1);
+			videptrTemp = videoptr + videoWidth*y + x;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
