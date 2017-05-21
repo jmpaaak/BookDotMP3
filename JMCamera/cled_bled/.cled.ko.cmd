@@ -1,0 +1,1 @@
+cmd_/home/user/7weekPractice/cled.ko := arm-none-linux-gnueabi-ld -EL -r  -T /root/kernel/scripts/module-common.lds --build-id  -o /home/user/7weekPractice/cled.ko /home/user/7weekPractice/cled.o /home/user/7weekPractice/cled.mod.o
