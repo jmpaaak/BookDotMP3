@@ -740,6 +740,7 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	for ( y = 0 ; y < videoHeight; y++ )
 	{
 		temp = 3*y;
+		x = 0;
 /*		for(x = 0; x < videoWidth;) 
 		{
 
