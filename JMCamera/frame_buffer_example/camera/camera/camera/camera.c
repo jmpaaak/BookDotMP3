@@ -736,16 +736,15 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 	unsigned char *displayFrame = (unsigned char*) malloc( (bmpInfoHeader.biSizeImage) );
 	unsigned short *videoptr = videoFrame;
 	int temp;
-	lineLeng = dFrameWidth*4;
 
 	printf("Mem res comp!!!\n");
-	for ( y = 0 ; y < videoHeight ; y++ )
+	for ( y = 0 ; y < videoWidth; y++ )
 	{
-		for(x = 0; x < videoWidth ;)
+		for(x = 0; x < videoHeight;)
 		{
 
 			videptrTemp =  videoptr + videoWidth*y + x ;
-			temp = y*lineLeng + x*4;
+			temp +=3;
 			displayFrame[temp + 2] = (unsigned char)((*videptrTemp & 0xF800) >> 8)  ;
 			displayFrame[temp + 1] = (unsigned char)((*videptrTemp & 0x07E0) >> 3)  ;
 			displayFrame[temp + 0] = (unsigned char)((*videptrTemp & 0x001F) << 3)  ;
