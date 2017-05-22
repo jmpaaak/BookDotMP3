@@ -871,5 +871,15 @@ int main(int argc, char **argv)
 	fb_err:
 	close(fb_fd);
 
+	/*** make http request JSON ***/
+
+
+	/*** call google cloud vision api ***/
+
+	system("./vision.sh");	
+
+
+	/*** parsing http response JSON ***/
+
 	exit(1);
 }
