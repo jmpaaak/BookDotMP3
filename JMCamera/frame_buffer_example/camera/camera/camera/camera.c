@@ -872,7 +872,8 @@ int main(int argc, char **argv)
 	close(fb_fd);
 
 	/*** make http request JSON ***/
-
+	// write_bmp_test.bmp? filename include at JSON
+	// json func import!
 
 	/*** call google cloud vision api ***/
 
