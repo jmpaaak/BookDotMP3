@@ -14,7 +14,7 @@
 #include "camera.h"
 #include "bitmap.h"
 
-
+#include "jsmn.h"
 
 #define V4L2_CID_CACHEABLE                      (V4L2_CID_BASE+40)
 
@@ -784,6 +784,46 @@ void write_bmp(char *filename, unsigned char *videoFrame, int videoWidth, int vi
 ///// end of Jonmin Def /////
 
 
+void make_json(FILE * fp) {
+/*	json_object * obj = json_object_new_object();
+	json_object *reqArray = json_object_new_array();
+
+	json_object *reqObj = json_object_new_object();
+
+	json_object *srcObj = json_object_new_object();
+	json_object *uriObj = json_object_new_object();
+	json_object	*uriStr = json_object_new_string("write_bmp_test.bmp"); 
+
+	json_object_object_add(uriObj, "imageUri", uriStr); // {"imageUri": "write_bmp_test.bmp"}
+	json_object_object_add(srcObj, "source", uriObj);	// {"source": {"imageUri": "write_bmp_test.bmp" }}
+	json_object_object_add(reqObj, "image", srcObj); 	// {"image": {...}}
+
+	json_object *featArray = json_object_new_array();
+	json_object *featObj = json_object_new_object();
+	json_object	*typeStr = json_object_new_string("TEXT_DETECTION");
+
+	json_object_object_add(featObj, "type", typeStr); 	 
+	json_object_array_add(featArray, featObj);
+	json_object_object_add(reqObj, "features", featArray); 	// {"image": {...}, "features": []}
+
+	json_object_array_add(reqArray, reqObj); // {"requests":[{"image":{...}, "features":{...}}]}
+	json_object_object_add(obj, "requests", reqArray); // {"requests":[]}
+	
+	char * pJson = json_object_to_json_string(obj); 	
+	
+	char * temp = pJson;
+	int jsonSize = 1;
+	while(*temp != '\0') {
+		temp++;
+		jsonSize++;
+	}
+
+	printf ("The json object created: %s, %d\n", pJson, jsonSize);
+	fwrite(pJson, jsonSize, 1, fp); 
+*/
+}
+
+
 #define  FBDEV_FILE "/dev/fb0"
 
 int main(int argc, char **argv)
@@ -872,15 +912,13 @@ int main(int argc, char **argv)
 	close(fb_fd);
 
 	/*** make http request JSON ***/
-	// write_bmp_test.bmp? filename include at JSON
-	// json func import!
+	FILE * fpReqJson = fopen("request.json", "wb");	
+	make_json(fpReqJson);
+	fclose(fpReqJson);
 
 	/*** call google cloud vision api ***/
-
 	system("./vision.sh");	
 
-
 	/*** parsing http response JSON ***/
-
 	exit(1);
 }
