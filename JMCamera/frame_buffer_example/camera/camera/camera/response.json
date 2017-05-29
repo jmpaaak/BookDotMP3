@@ -1,0 +1,87 @@
+{
+  "responses": [
+    {
+      "landmarkAnnotations": [
+        {
+          "mid": "/m/019dvv",
+          "description": "Mount Rushmore",
+          "score": 0.886349,
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 277,
+                "y": 661
+              },
+              {
+                "x": 2675,
+                "y": 661
+              },
+              {
+                "x": 2675,
+                "y": 1717
+              },
+              {
+                "x": 277,
+                "y": 1717
+              }
+            ]
+          },
+          "locations": [
+            {
+              "latLng": {
+                "latitude": 43.878264,
+                "longitude": -103.45700740814209
+              }
+            }
+          ]
+        }
+      ],
+      "webDetection": {
+        "webEntities": [
+          {
+            "entityId": "/g/11b77jl9z5",
+            "score": 22.42592,
+            "description": "Mount Rushmore"
+          },
+          {
+            "entityId": "/m/019dvv",
+            "score": 19.35872,
+            "description": "Mount Rushmore National Memorial"
+          }
+        ],
+        "fullMatchingImages": [
+          {
+            "url": "https://cloud.google.com/vision/images/rushmore.jpg"
+          },
+          {
+            "url": "https://tinahanagan.files.wordpress.com/2012/04/dsc_0597.jpg"
+          }
+        ],
+        "partialMatchingImages": [
+          {
+            "url": "https://i1.wp.com/eightsails.files.wordpress.com/2016/10/img_2138.jpg"
+          },
+          {
+            "url": "https://i1.wp.com/littlezenmonkey.com/wp-content/uploads/2016/05/IMG_6994.jpg"
+          }
+        ],
+        "pagesWithMatchingImages": [
+          {
+            "url": "https://www.tripadvisor.com/LocationPhotoDirectLink-g60908-d143767-i191067858-Mount_Rushmore_National_Memorial-Keystone_South_Dakota.html"
+          },
+          {
+            "url": "https://www.tripadvisor.com/LocationPhotoDirectLink-g60908-d143767-i118386158-Mount_Rushmore_National_Memorial-Keystone_South_Dakota.html"
+          }
+        ],
+        "visuallySimilarImages": [
+          {
+            "url": "http://media.gettyimages.com/photos/the-famous-landmark-mount-rushmore-on-a-perfect-weather-day-picture-id106682515?s=170667a"
+          },
+          {
+            "url": "http://1.bp.blogspot.com/-GBJGvILvzdw/Vi5-nxM7L0I/AAAAAAAAbjY/yiEvWFFCA7w/s1600/17643473535_0a186aa87a_k.jpg"
+          }
+        ]
+      }
+    }
+  ]
+}

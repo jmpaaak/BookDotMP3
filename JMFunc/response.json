@@ -1,0 +1,3719 @@
+{
+  "responses": [
+    {
+      "textAnnotations": [
+        {
+          "locale": "ko",
+          "description": "장점\n단점\n인덱스에 대한 적은 공간 사용\nDML에 대한 성능 저하 발생\n분포도가 낮은 컬럼에 사용시\n분포도가 높은 컬럼에 대한\n성능 저하\n",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 43,
+                "y": 29
+              },
+              {
+                "x": 518,
+                "y": 29
+              },
+              {
+                "x": 518,
+                "y": 209
+              },
+              {
+                "x": 43,
+                "y": 209
+              }
+            ]
+          }
+        },
+        {
+          "description": "장점",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 44,
+                "y": 29
+              },
+              {
+                "x": 70,
+                "y": 31
+              },
+              {
+                "x": 69,
+                "y": 46
+              },
+              {
+                "x": 43,
+                "y": 44
+              }
+            ]
+          }
+        },
+        {
+          "description": "단점",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 335,
+                "y": 32
+              },
+              {
+                "x": 360,
+                "y": 34
+              },
+              {
+                "x": 359,
+                "y": 48
+              },
+              {
+                "x": 334,
+                "y": 46
+              }
+            ]
+          }
+        },
+        {
+          "description": "인덱스",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 54,
+                "y": 99
+              },
+              {
+                "x": 96,
+                "y": 99
+              },
+              {
+                "x": 96,
+                "y": 113
+              },
+              {
+                "x": 54,
+                "y": 113
+              }
+            ]
+          }
+        },
+        {
+          "description": "에",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 98,
+                "y": 99
+              },
+              {
+                "x": 109,
+                "y": 99
+              },
+              {
+                "x": 109,
+                "y": 112
+              },
+              {
+                "x": 98,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "대한",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 120,
+                "y": 99
+              },
+              {
+                "x": 147,
+                "y": 99
+              },
+              {
+                "x": 147,
+                "y": 112
+              },
+              {
+                "x": 120,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "적은",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 156,
+                "y": 99
+              },
+              {
+                "x": 183,
+                "y": 99
+              },
+              {
+                "x": 183,
+                "y": 112
+              },
+              {
+                "x": 156,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "공간",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 192,
+                "y": 99
+              },
+              {
+                "x": 219,
+                "y": 99
+              },
+              {
+                "x": 219,
+                "y": 112
+              },
+              {
+                "x": 192,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "사용",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 228,
+                "y": 99
+              },
+              {
+                "x": 256,
+                "y": 99
+              },
+              {
+                "x": 256,
+                "y": 113
+              },
+              {
+                "x": 228,
+                "y": 113
+              }
+            ]
+          }
+        },
+        {
+          "description": "DML",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 332,
+                "y": 100
+              },
+              {
+                "x": 360,
+                "y": 100
+              },
+              {
+                "x": 360,
+                "y": 111
+              },
+              {
+                "x": 332,
+                "y": 111
+              }
+            ]
+          }
+        },
+        {
+          "description": "에",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 362,
+                "y": 98
+              },
+              {
+                "x": 372,
+                "y": 98
+              },
+              {
+                "x": 372,
+                "y": 111
+              },
+              {
+                "x": 362,
+                "y": 111
+              }
+            ]
+          }
+        },
+        {
+          "description": "대한",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 384,
+                "y": 98
+              },
+              {
+                "x": 411,
+                "y": 98
+              },
+              {
+                "x": 411,
+                "y": 112
+              },
+              {
+                "x": 384,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "성능",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 419,
+                "y": 98
+              },
+              {
+                "x": 447,
+                "y": 98
+              },
+              {
+                "x": 447,
+                "y": 112
+              },
+              {
+                "x": 419,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "저하",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 456,
+                "y": 98
+              },
+              {
+                "x": 483,
+                "y": 98
+              },
+              {
+                "x": 483,
+                "y": 111
+              },
+              {
+                "x": 456,
+                "y": 111
+              }
+            ]
+          }
+        },
+        {
+          "description": "발생",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 492,
+                "y": 98
+              },
+              {
+                "x": 518,
+                "y": 98
+              },
+              {
+                "x": 518,
+                "y": 112
+              },
+              {
+                "x": 492,
+                "y": 112
+              }
+            ]
+          }
+        },
+        {
+          "description": "분포도",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 49,
+                "y": 169
+              },
+              {
+                "x": 91,
+                "y": 169
+              },
+              {
+                "x": 91,
+                "y": 182
+              },
+              {
+                "x": 49,
+                "y": 182
+              }
+            ]
+          }
+        },
+        {
+          "description": "가",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 93,
+                "y": 169
+              },
+              {
+                "x": 106,
+                "y": 169
+              },
+              {
+                "x": 106,
+                "y": 182
+              },
+              {
+                "x": 93,
+                "y": 182
+              }
+            ]
+          }
+        },
+        {
+          "description": "낮은",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 115,
+                "y": 169
+              },
+              {
+                "x": 142,
+                "y": 169
+              },
+              {
+                "x": 142,
+                "y": 182
+              },
+              {
+                "x": 115,
+                "y": 182
+              }
+            ]
+          }
+        },
+        {
+          "description": "컬럼",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 151,
+                "y": 169
+              },
+              {
+                "x": 176,
+                "y": 169
+              },
+              {
+                "x": 176,
+                "y": 183
+              },
+              {
+                "x": 151,
+                "y": 183
+              }
+            ]
+          }
+        },
+        {
+          "description": "에",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 181,
+                "y": 169
+              },
+              {
+                "x": 191,
+                "y": 169
+              },
+              {
+                "x": 191,
+                "y": 182
+              },
+              {
+                "x": 181,
+                "y": 182
+              }
+            ]
+          }
+        },
+        {
+          "description": "사용시",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 201,
+                "y": 169
+              },
+              {
+                "x": 243,
+                "y": 169
+              },
+              {
+                "x": 243,
+                "y": 183
+              },
+              {
+                "x": 201,
+                "y": 183
+              }
+            ]
+          }
+        },
+        {
+          "description": "분포도",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 333,
+                "y": 165
+              },
+              {
+                "x": 375,
+                "y": 165
+              },
+              {
+                "x": 375,
+                "y": 178
+              },
+              {
+                "x": 333,
+                "y": 178
+              }
+            ]
+          }
+        },
+        {
+          "description": "가",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 378,
+                "y": 165
+              },
+              {
+                "x": 390,
+                "y": 165
+              },
+              {
+                "x": 390,
+                "y": 178
+              },
+              {
+                "x": 378,
+                "y": 178
+              }
+            ]
+          }
+        },
+        {
+          "description": "높은",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 399,
+                "y": 165
+              },
+              {
+                "x": 426,
+                "y": 165
+              },
+              {
+                "x": 426,
+                "y": 179
+              },
+              {
+                "x": 399,
+                "y": 179
+              }
+            ]
+          }
+        },
+        {
+          "description": "컬럼",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 436,
+                "y": 165
+              },
+              {
+                "x": 461,
+                "y": 165
+              },
+              {
+                "x": 461,
+                "y": 179
+              },
+              {
+                "x": 436,
+                "y": 179
+              }
+            ]
+          }
+        },
+        {
+          "description": "에",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 465,
+                "y": 165
+              },
+              {
+                "x": 475,
+                "y": 165
+              },
+              {
+                "x": 475,
+                "y": 178
+              },
+              {
+                "x": 465,
+                "y": 178
+              }
+            ]
+          }
+        },
+        {
+          "description": "대한",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 487,
+                "y": 165
+              },
+              {
+                "x": 514,
+                "y": 165
+              },
+              {
+                "x": 514,
+                "y": 178
+              },
+              {
+                "x": 487,
+                "y": 178
+              }
+            ]
+          }
+        },
+        {
+          "description": "성능",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 334,
+                "y": 195
+              },
+              {
+                "x": 360,
+                "y": 195
+              },
+              {
+                "x": 360,
+                "y": 209
+              },
+              {
+                "x": 334,
+                "y": 209
+              }
+            ]
+          }
+        },
+        {
+          "description": "저하",
+          "boundingPoly": {
+            "vertices": [
+              {
+                "x": 369,
+                "y": 195
+              },
+              {
+                "x": 397,
+                "y": 195
+              },
+              {
+                "x": 397,
+                "y": 209
+              },
+              {
+                "x": 369,
+                "y": 209
+              }
+            ]
+          }
+        }
+      ],
+      "fullTextAnnotation": {
+        "pages": [
+          {
+            "property": {
+              "detectedLanguages": [
+                {
+                  "languageCode": "ko"
+                }
+              ]
+            },
+            "width": 600,
+            "height": 262,
+            "blocks": [
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 44,
+                      "y": 29
+                    },
+                    {
+                      "x": 70,
+                      "y": 31
+                    },
+                    {
+                      "x": 69,
+                      "y": 46
+                    },
+                    {
+                      "x": 43,
+                      "y": 44
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 43,
+                          "y": 29
+                        },
+                        {
+                          "x": 70,
+                          "y": 29
+                        },
+                        {
+                          "x": 70,
+                          "y": 46
+                        },
+                        {
+                          "x": 43,
+                          "y": 46
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 44,
+                              "y": 29
+                            },
+                            {
+                              "x": 70,
+                              "y": 31
+                            },
+                            {
+                              "x": 69,
+                              "y": 46
+                            },
+                            {
+                              "x": 43,
+                              "y": 44
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 44,
+                                  "y": 31
+                                },
+                                {
+                                  "x": 56,
+                                  "y": 32
+                                },
+                                {
+                                  "x": 55,
+                                  "y": 45
+                                },
+                                {
+                                  "x": 43,
+                                  "y": 44
+                                }
+                              ]
+                            },
+                            "text": "장"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 59,
+                                  "y": 30
+                                },
+                                {
+                                  "x": 70,
+                                  "y": 31
+                                },
+                                {
+                                  "x": 69,
+                                  "y": 45
+                                },
+                                {
+                                  "x": 58,
+                                  "y": 44
+                                }
+                              ]
+                            },
+                            "text": "점"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 335,
+                      "y": 32
+                    },
+                    {
+                      "x": 360,
+                      "y": 34
+                    },
+                    {
+                      "x": 359,
+                      "y": 48
+                    },
+                    {
+                      "x": 334,
+                      "y": 46
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 334,
+                          "y": 32
+                        },
+                        {
+                          "x": 360,
+                          "y": 32
+                        },
+                        {
+                          "x": 360,
+                          "y": 48
+                        },
+                        {
+                          "x": 334,
+                          "y": 48
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 335,
+                              "y": 32
+                            },
+                            {
+                              "x": 360,
+                              "y": 34
+                            },
+                            {
+                              "x": 359,
+                              "y": 48
+                            },
+                            {
+                              "x": 334,
+                              "y": 46
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 335,
+                                  "y": 34
+                                },
+                                {
+                                  "x": 347,
+                                  "y": 35
+                                },
+                                {
+                                  "x": 346,
+                                  "y": 47
+                                },
+                                {
+                                  "x": 334,
+                                  "y": 46
+                                }
+                              ]
+                            },
+                            "text": "단"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 351,
+                                  "y": 33
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 34
+                                },
+                                {
+                                  "x": 359,
+                                  "y": 48
+                                },
+                                {
+                                  "x": 350,
+                                  "y": 47
+                                }
+                              ]
+                            },
+                            "text": "점"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 54,
+                      "y": 99
+                    },
+                    {
+                      "x": 256,
+                      "y": 99
+                    },
+                    {
+                      "x": 256,
+                      "y": 113
+                    },
+                    {
+                      "x": 54,
+                      "y": 113
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 54,
+                          "y": 99
+                        },
+                        {
+                          "x": 256,
+                          "y": 99
+                        },
+                        {
+                          "x": 256,
+                          "y": 113
+                        },
+                        {
+                          "x": 54,
+                          "y": 113
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 54,
+                              "y": 99
+                            },
+                            {
+                              "x": 96,
+                              "y": 99
+                            },
+                            {
+                              "x": 96,
+                              "y": 113
+                            },
+                            {
+                              "x": 54,
+                              "y": 113
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 54,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 65,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 65,
+                                  "y": 113
+                                },
+                                {
+                                  "x": 54,
+                                  "y": 113
+                                }
+                              ]
+                            },
+                            "text": "인"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 69,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 79,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 79,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 69,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "덱"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 83,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 96,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 96,
+                                  "y": 110
+                                },
+                                {
+                                  "x": 83,
+                                  "y": 110
+                                }
+                              ]
+                            },
+                            "text": "스"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 98,
+                              "y": 99
+                            },
+                            {
+                              "x": 109,
+                              "y": 99
+                            },
+                            {
+                              "x": 109,
+                              "y": 112
+                            },
+                            {
+                              "x": 98,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 98,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 109,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 109,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 98,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "에"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 120,
+                              "y": 99
+                            },
+                            {
+                              "x": 147,
+                              "y": 99
+                            },
+                            {
+                              "x": 147,
+                              "y": 112
+                            },
+                            {
+                              "x": 120,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 120,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 131,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 131,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 120,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "대"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 135,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 147,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 147,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 135,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "한"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 156,
+                              "y": 99
+                            },
+                            {
+                              "x": 183,
+                              "y": 99
+                            },
+                            {
+                              "x": 183,
+                              "y": 112
+                            },
+                            {
+                              "x": 156,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 156,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 166,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 166,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 156,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "적"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 171,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 183,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 183,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 171,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "은"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 192,
+                              "y": 99
+                            },
+                            {
+                              "x": 219,
+                              "y": 99
+                            },
+                            {
+                              "x": 219,
+                              "y": 112
+                            },
+                            {
+                              "x": 192,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 192,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 204,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 204,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 192,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "공"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 207,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 219,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 219,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 207,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "간"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 228,
+                              "y": 99
+                            },
+                            {
+                              "x": 256,
+                              "y": 99
+                            },
+                            {
+                              "x": 256,
+                              "y": 113
+                            },
+                            {
+                              "x": 228,
+                              "y": 113
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 228,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 241,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 241,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 228,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "사"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 243,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 256,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 256,
+                                  "y": 113
+                                },
+                                {
+                                  "x": 243,
+                                  "y": 113
+                                }
+                              ]
+                            },
+                            "text": "용"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 332,
+                      "y": 98
+                    },
+                    {
+                      "x": 518,
+                      "y": 98
+                    },
+                    {
+                      "x": 518,
+                      "y": 112
+                    },
+                    {
+                      "x": 332,
+                      "y": 112
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 332,
+                          "y": 98
+                        },
+                        {
+                          "x": 518,
+                          "y": 98
+                        },
+                        {
+                          "x": 518,
+                          "y": 112
+                        },
+                        {
+                          "x": 332,
+                          "y": 112
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "sr"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 332,
+                              "y": 100
+                            },
+                            {
+                              "x": 360,
+                              "y": 100
+                            },
+                            {
+                              "x": 360,
+                              "y": 111
+                            },
+                            {
+                              "x": 332,
+                              "y": 111
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 332,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 340,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 340,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 332,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "D"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 342,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 352,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 352,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 342,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "M"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 354,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 100
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 354,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "L"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 362,
+                              "y": 98
+                            },
+                            {
+                              "x": 372,
+                              "y": 98
+                            },
+                            {
+                              "x": 372,
+                              "y": 111
+                            },
+                            {
+                              "x": 362,
+                              "y": 111
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 362,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 372,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 372,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 362,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "에"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 384,
+                              "y": 98
+                            },
+                            {
+                              "x": 411,
+                              "y": 98
+                            },
+                            {
+                              "x": 411,
+                              "y": 112
+                            },
+                            {
+                              "x": 384,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 384,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 394,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 394,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 384,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "대"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 399,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 411,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 411,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 399,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "한"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 419,
+                              "y": 98
+                            },
+                            {
+                              "x": 447,
+                              "y": 98
+                            },
+                            {
+                              "x": 447,
+                              "y": 112
+                            },
+                            {
+                              "x": 419,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 419,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 430,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 430,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 419,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "성"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 435,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 447,
+                                  "y": 99
+                                },
+                                {
+                                  "x": 447,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 435,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "능"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 456,
+                              "y": 98
+                            },
+                            {
+                              "x": 483,
+                              "y": 98
+                            },
+                            {
+                              "x": 483,
+                              "y": 111
+                            },
+                            {
+                              "x": 456,
+                              "y": 111
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 456,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 466,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 466,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 456,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "저"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 471,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 483,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 483,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 471,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "하"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 492,
+                              "y": 98
+                            },
+                            {
+                              "x": 518,
+                              "y": 98
+                            },
+                            {
+                              "x": 518,
+                              "y": 112
+                            },
+                            {
+                              "x": 492,
+                              "y": 112
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 492,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 504,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 504,
+                                  "y": 111
+                                },
+                                {
+                                  "x": 492,
+                                  "y": 111
+                                }
+                              ]
+                            },
+                            "text": "발"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 507,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 518,
+                                  "y": 98
+                                },
+                                {
+                                  "x": 518,
+                                  "y": 112
+                                },
+                                {
+                                  "x": 507,
+                                  "y": 112
+                                }
+                              ]
+                            },
+                            "text": "생"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 49,
+                      "y": 169
+                    },
+                    {
+                      "x": 243,
+                      "y": 169
+                    },
+                    {
+                      "x": 243,
+                      "y": 183
+                    },
+                    {
+                      "x": 49,
+                      "y": 183
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 49,
+                          "y": 169
+                        },
+                        {
+                          "x": 243,
+                          "y": 169
+                        },
+                        {
+                          "x": 243,
+                          "y": 183
+                        },
+                        {
+                          "x": 49,
+                          "y": 183
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 49,
+                              "y": 169
+                            },
+                            {
+                              "x": 91,
+                              "y": 169
+                            },
+                            {
+                              "x": 91,
+                              "y": 182
+                            },
+                            {
+                              "x": 49,
+                              "y": 182
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 49,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 61,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 61,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 49,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "분"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 63,
+                                  "y": 170
+                                },
+                                {
+                                  "x": 76,
+                                  "y": 170
+                                },
+                                {
+                                  "x": 76,
+                                  "y": 181
+                                },
+                                {
+                                  "x": 63,
+                                  "y": 181
+                                }
+                              ]
+                            },
+                            "text": "포"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 78,
+                                  "y": 170
+                                },
+                                {
+                                  "x": 91,
+                                  "y": 170
+                                },
+                                {
+                                  "x": 91,
+                                  "y": 180
+                                },
+                                {
+                                  "x": 78,
+                                  "y": 180
+                                }
+                              ]
+                            },
+                            "text": "도"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 93,
+                              "y": 169
+                            },
+                            {
+                              "x": 106,
+                              "y": 169
+                            },
+                            {
+                              "x": 106,
+                              "y": 182
+                            },
+                            {
+                              "x": 93,
+                              "y": 182
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 93,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 106,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 106,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 93,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "가"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 115,
+                              "y": 169
+                            },
+                            {
+                              "x": 142,
+                              "y": 169
+                            },
+                            {
+                              "x": 142,
+                              "y": 182
+                            },
+                            {
+                              "x": 115,
+                              "y": 182
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 115,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 127,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 127,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 115,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "낮"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 129,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 142,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 142,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 129,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "은"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 151,
+                              "y": 169
+                            },
+                            {
+                              "x": 176,
+                              "y": 169
+                            },
+                            {
+                              "x": 176,
+                              "y": 183
+                            },
+                            {
+                              "x": 151,
+                              "y": 183
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 151,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 162,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 162,
+                                  "y": 183
+                                },
+                                {
+                                  "x": 151,
+                                  "y": 183
+                                }
+                              ]
+                            },
+                            "text": "컬"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 167,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 176,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 176,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 167,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "럼"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 181,
+                              "y": 169
+                            },
+                            {
+                              "x": 191,
+                              "y": 169
+                            },
+                            {
+                              "x": 191,
+                              "y": 182
+                            },
+                            {
+                              "x": 181,
+                              "y": 182
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 181,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 191,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 191,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 181,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "에"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 201,
+                              "y": 169
+                            },
+                            {
+                              "x": 243,
+                              "y": 169
+                            },
+                            {
+                              "x": 243,
+                              "y": 183
+                            },
+                            {
+                              "x": 201,
+                              "y": 183
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 201,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 214,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 214,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 201,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "사"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 217,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 229,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 229,
+                                  "y": 183
+                                },
+                                {
+                                  "x": 217,
+                                  "y": 183
+                                }
+                              ]
+                            },
+                            "text": "용"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 232,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 243,
+                                  "y": 169
+                                },
+                                {
+                                  "x": 243,
+                                  "y": 182
+                                },
+                                {
+                                  "x": 232,
+                                  "y": 182
+                                }
+                              ]
+                            },
+                            "text": "시"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 333,
+                      "y": 165
+                    },
+                    {
+                      "x": 514,
+                      "y": 165
+                    },
+                    {
+                      "x": 514,
+                      "y": 179
+                    },
+                    {
+                      "x": 333,
+                      "y": 179
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 333,
+                          "y": 165
+                        },
+                        {
+                          "x": 514,
+                          "y": 165
+                        },
+                        {
+                          "x": 514,
+                          "y": 179
+                        },
+                        {
+                          "x": 333,
+                          "y": 179
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 333,
+                              "y": 165
+                            },
+                            {
+                              "x": 375,
+                              "y": 165
+                            },
+                            {
+                              "x": 375,
+                              "y": 178
+                            },
+                            {
+                              "x": 333,
+                              "y": 178
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 333,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 345,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 345,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 333,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "분"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 348,
+                                  "y": 166
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 166
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 177
+                                },
+                                {
+                                  "x": 348,
+                                  "y": 177
+                                }
+                              ]
+                            },
+                            "text": "포"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 363,
+                                  "y": 167
+                                },
+                                {
+                                  "x": 375,
+                                  "y": 167
+                                },
+                                {
+                                  "x": 375,
+                                  "y": 177
+                                },
+                                {
+                                  "x": 363,
+                                  "y": 177
+                                }
+                              ]
+                            },
+                            "text": "도"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 378,
+                              "y": 165
+                            },
+                            {
+                              "x": 390,
+                              "y": 165
+                            },
+                            {
+                              "x": 390,
+                              "y": 178
+                            },
+                            {
+                              "x": 378,
+                              "y": 178
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 378,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 390,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 390,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 378,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "가"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 399,
+                              "y": 165
+                            },
+                            {
+                              "x": 426,
+                              "y": 165
+                            },
+                            {
+                              "x": 426,
+                              "y": 179
+                            },
+                            {
+                              "x": 399,
+                              "y": 179
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 399,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 411,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 411,
+                                  "y": 179
+                                },
+                                {
+                                  "x": 399,
+                                  "y": 179
+                                }
+                              ]
+                            },
+                            "text": "높"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 414,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 426,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 426,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 414,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "은"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 436,
+                              "y": 165
+                            },
+                            {
+                              "x": 461,
+                              "y": 165
+                            },
+                            {
+                              "x": 461,
+                              "y": 179
+                            },
+                            {
+                              "x": 436,
+                              "y": 179
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 436,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 447,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 447,
+                                  "y": 179
+                                },
+                                {
+                                  "x": 436,
+                                  "y": 179
+                                }
+                              ]
+                            },
+                            "text": "컬"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 451,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 461,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 461,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 451,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "럼"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 465,
+                              "y": 165
+                            },
+                            {
+                              "x": 475,
+                              "y": 165
+                            },
+                            {
+                              "x": 475,
+                              "y": 178
+                            },
+                            {
+                              "x": 465,
+                              "y": 178
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 465,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 475,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 475,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 465,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "에"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 487,
+                              "y": 165
+                            },
+                            {
+                              "x": 514,
+                              "y": 165
+                            },
+                            {
+                              "x": 514,
+                              "y": 178
+                            },
+                            {
+                              "x": 487,
+                              "y": 178
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 487,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 497,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 497,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 487,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "대"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 502,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 514,
+                                  "y": 165
+                                },
+                                {
+                                  "x": 514,
+                                  "y": 178
+                                },
+                                {
+                                  "x": 502,
+                                  "y": 178
+                                }
+                              ]
+                            },
+                            "text": "한"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              },
+              {
+                "property": {
+                  "detectedLanguages": [
+                    {
+                      "languageCode": "ko"
+                    }
+                  ]
+                },
+                "boundingBox": {
+                  "vertices": [
+                    {
+                      "x": 334,
+                      "y": 194
+                    },
+                    {
+                      "x": 397,
+                      "y": 195
+                    },
+                    {
+                      "x": 397,
+                      "y": 210
+                    },
+                    {
+                      "x": 334,
+                      "y": 209
+                    }
+                  ]
+                },
+                "paragraphs": [
+                  {
+                    "property": {
+                      "detectedLanguages": [
+                        {
+                          "languageCode": "ko"
+                        }
+                      ]
+                    },
+                    "boundingBox": {
+                      "vertices": [
+                        {
+                          "x": 334,
+                          "y": 195
+                        },
+                        {
+                          "x": 397,
+                          "y": 195
+                        },
+                        {
+                          "x": 397,
+                          "y": 209
+                        },
+                        {
+                          "x": 334,
+                          "y": 209
+                        }
+                      ]
+                    },
+                    "words": [
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 334,
+                              "y": 195
+                            },
+                            {
+                              "x": 360,
+                              "y": 195
+                            },
+                            {
+                              "x": 360,
+                              "y": 209
+                            },
+                            {
+                              "x": 334,
+                              "y": 209
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 334,
+                                  "y": 195
+                                },
+                                {
+                                  "x": 343,
+                                  "y": 195
+                                },
+                                {
+                                  "x": 343,
+                                  "y": 209
+                                },
+                                {
+                                  "x": 334,
+                                  "y": 209
+                                }
+                              ]
+                            },
+                            "text": "성"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 348,
+                                  "y": 196
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 196
+                                },
+                                {
+                                  "x": 360,
+                                  "y": 208
+                                },
+                                {
+                                  "x": 348,
+                                  "y": 208
+                                }
+                              ]
+                            },
+                            "text": "능"
+                          }
+                        ]
+                      },
+                      {
+                        "property": {
+                          "detectedLanguages": [
+                            {
+                              "languageCode": "ko"
+                            }
+                          ]
+                        },
+                        "boundingBox": {
+                          "vertices": [
+                            {
+                              "x": 369,
+                              "y": 195
+                            },
+                            {
+                              "x": 397,
+                              "y": 195
+                            },
+                            {
+                              "x": 397,
+                              "y": 209
+                            },
+                            {
+                              "x": 369,
+                              "y": 209
+                            }
+                          ]
+                        },
+                        "symbols": [
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ]
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 369,
+                                  "y": 196
+                                },
+                                {
+                                  "x": 380,
+                                  "y": 196
+                                },
+                                {
+                                  "x": 380,
+                                  "y": 209
+                                },
+                                {
+                                  "x": 369,
+                                  "y": 209
+                                }
+                              ]
+                            },
+                            "text": "저"
+                          },
+                          {
+                            "property": {
+                              "detectedLanguages": [
+                                {
+                                  "languageCode": "ko"
+                                }
+                              ],
+                              "detectedBreak": {
+                                "type": "EOL_SURE_SPACE"
+                              }
+                            },
+                            "boundingBox": {
+                              "vertices": [
+                                {
+                                  "x": 384,
+                                  "y": 195
+                                },
+                                {
+                                  "x": 397,
+                                  "y": 195
+                                },
+                                {
+                                  "x": 397,
+                                  "y": 209
+                                },
+                                {
+                                  "x": 384,
+                                  "y": 209
+                                }
+                              ]
+                            },
+                            "text": "하"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "blockType": "TEXT"
+              }
+            ]
+          }
+        ],
+        "text": "장점\n단점\n인덱스에 대한 적은 공간 사용\nDML에 대한 성능 저하 발생\n분포도가 낮은 컬럼에 사용시\n분포도가 높은 컬럼에 대한\n성능 저하\n"
+      }
+    }
+  ]
+}

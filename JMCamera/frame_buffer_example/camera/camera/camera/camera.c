@@ -886,24 +886,25 @@ int main(int argc, char **argv)
 	CreateCamera(0);
 	startPreview();
 
-		ret = fimc_poll(&m_events_c);
-		CHECK_PTR(ret);
-		index = fimc_v4l2_dqbuf(m_cam_fd, 1);
-		//Draw(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
-		//	 CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
 
-		write_bmp("write_bmp_test.bmp", m_buffers_preview[index].virt.p, CAMERA_PREVIEW_WIDTH,\
-		CAMERA_PREVIEW_HEIGHT);
+	/** pic one and save bmp **/
+	ret = fimc_poll(&m_events_c);
+	CHECK_PTR(ret);
+	index = fimc_v4l2_dqbuf(m_cam_fd, 1);
+	//Draw(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
+	//	 CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
 
-		DrawFromRGB565(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
-		CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
-		//printf("index:%d\n",index);
-		//printf("virt.p:%p, size.s:%d\n",m_buffers_preview[index].virt.p,\
-		//	m_buffers_preview[index].size.s);	
+	write_bmp("write_bmp_test.bmp", m_buffers_preview[index].virt.p, CAMERA_PREVIEW_WIDTH,\
+			CAMERA_PREVIEW_HEIGHT);
 
-		ret = fimc_v4l2_qbuf(m_cam_fd,index);
-		// sleep(1);
+	DrawFromRGB565(fb_mapped, m_buffers_preview[index].virt.p,CAMERA_PREVIEW_WIDTH,\
+			CAMERA_PREVIEW_HEIGHT,screen_width,screen_height);
+	//printf("index:%d\n",index);
+	//printf("virt.p:%p, size.s:%d\n",m_buffers_preview[index].virt.p,\
+	//	m_buffers_preview[index].size.s);	
 
+	ret = fimc_v4l2_qbuf(m_cam_fd,index);
+	// sleep(1);
 
 
 	stopPreview();
@@ -912,13 +913,14 @@ int main(int argc, char **argv)
 	close(fb_fd);
 
 	/*** make http request JSON ***/
-	FILE * fpReqJson = fopen("request.json", "wb");	
-	make_json(fpReqJson);
-	fclose(fpReqJson);
 
 	/*** call google cloud vision api ***/
 	system("./vision.sh");	
 
 	/*** parsing http response JSON ***/
+	FILE * fpReqJson = fopen("response.json", "wb");	
+	make_json(fpReqJson);
+	fclose(fpReqJson);
+
 	exit(1);
 }
