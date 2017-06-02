@@ -4,9 +4,7 @@
 #include <unistd.h>
 #include <stdint.h>
 
-#include "jsmn.h"
-
-char* callAPI(char *imgContent) {
+void callAPI(char *imgContent) {
 
 	char shellBuffer[300];
 
@@ -28,14 +26,44 @@ char* callAPI(char *imgContent) {
 	}
 
 	fclose(fpReqJson);
-	fclose(fpTempJson);
 
 	system("./vision-target.sh");  
 	
 	/*** parsing http response JSON ***/
-	//FILE * fpResJson = fopen("response.json", "rb");        
-	//fclose(fpResJson);
+	FILE * fpResJson = fopen("response.json", "rb");       
+	char * resultTextRaw;
+	char resultText[1000];
+	char resultTextBuffer[1000]; 
 
+	for(i=0; i < 7; i++) {
+		fgets(resultTextBuffer, 1000, fpResJson); 	// skipping 6 lines and get next
+	}
+
+	resultTextRaw = strstr(resultTextBuffer, ":");
+	resultTextRaw = strstr(resultTextRaw, "\"");
+	strcpy(resultText, (&resultTextRaw[0])+1);		// skipping start "
+	int textWithAtosLen = strlen(resultText);
+	resultText[textWithAtosLen-3] = '\n';	// skipping end "
+	resultText[textWithAtosLen-2] = '\0';	// skipping end "
+
+	int indexResolved;
+	for(i=0, indexResolved=0; i < strlen(resultText); i++) {
+		if(resultText[i] != '\\' && resultText[i+1] != 'n') {
+			resultText[indexResolved] = resultText[i];
+		}
+		else {
+			resultText[indexResolved] = ' ';
+			i++; // it cause i = i+2
+		}
+		indexResolved++;
+	}
+	resultText[indexResolved] = '\n';
+	resultText[indexResolved+1] = '\0';
+
+	printf("\n%s", resultText); // res texts
+
+	fclose(fpTempJson);
+	fclose(fpResJson);
 }
 
 
@@ -91,7 +119,7 @@ char *base64_encode(const unsigned char *data,
 }
 
 
-char* callGoogleVision(char *imageUrl) {
+void callGoogleVision(char *imageUrl) {
 	char inputUrl[100];
     strcpy(inputUrl, imageUrl); // "TST001.png";
 
