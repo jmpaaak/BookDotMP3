@@ -1,4 +1,4 @@
-wget -O- --post-data='
+wget -O- --post-data '
 {
   "requests":[
     {
@@ -13,4 +13,4 @@ wget -O- --post-data='
     }
   ]
 }
-' --header=Content-Type:application/json "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCct00PWxWPoXzilFo8BrgeAKawR9OiRZQ" -O response.json
+' --header 'Content-Type:application/json' https://vision.googleapis.com/v1/images:annotate?key=AIzaSyCct00PWxWPoXzilFo8BrgeAKawR9OiRZQ -O response.json
