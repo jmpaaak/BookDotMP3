@@ -31,7 +31,7 @@ void *sevenSegs(int value)
 
 	while(1 && endFlagSevenSegs == -1) {
 		write(fd, &value, 4);
-		sleep(0.1);
+		usleep(100000);
 	}
 
 	close(fd);
@@ -42,7 +42,7 @@ void *sevenSegs(int value)
 void initPage(int* page) {
 	inactiveTIndex = 1;
 	endFlagSevenSegs = -1;
-	pthread_create(&threads[0], NULL, &sevenSegs, (void*) 0);
+	pthread_create(&threads[0], NULL, &sevenSegs, (void*) (*page));
 };
 
 void setNextPage(int* page) {

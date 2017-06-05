@@ -1,0 +1,1 @@
+cmd_/home/user/7weekPractice/driver/cled.ko := arm-none-linux-gnueabi-ld -EL -r  -T /root/kernel/scripts/module-common.lds --build-id  -o /home/user/7weekPractice/driver/cled.ko /home/user/7weekPractice/driver/cled.o /home/user/7weekPractice/driver/cled.mod.o

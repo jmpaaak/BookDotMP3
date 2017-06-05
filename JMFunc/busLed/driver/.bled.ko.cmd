@@ -1,0 +1,1 @@
+cmd_/home/user/busLed/driver/bled.ko := arm-none-linux-gnueabi-ld -EL -r  -T /root/kernel/scripts/module-common.lds --build-id  -o /home/user/busLed/driver/bled.ko /home/user/busLed/driver/bled.o /home/user/busLed/driver/bled.mod.o
