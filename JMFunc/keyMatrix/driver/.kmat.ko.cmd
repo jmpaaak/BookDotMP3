@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/keyMatrix/driver/kmat.ko := arm-none-linux-gnueabi-ld -EL -r  -T /root/kernel/scripts/module-common.lds --build-id  -o /mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/keyMatrix/driver/kmat.ko /mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/keyMatrix/driver/kmat.o /mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/keyMatrix/driver/kmat.mod.o
