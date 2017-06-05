@@ -9,25 +9,31 @@ void callAPI(char *imgContent) {
 	char shellBuffer[300];
 
 	/*** call google cloud vision api ***/
-	FILE * fpReqJson = fopen("vision-target.sh", "wb");       
-	FILE * fpTempJson = fopen("vision.sh", "r+b");       
+	FILE * fpReqJson = fopen("request-target.json", "w+b");       
+	FILE * fpTempJson = fopen("request.json", "r+b");       
 
 	int i;
-	for(i=0; i < 6; i++) {
+	for(i=0; i < 5; i++) {
 		fgets(shellBuffer, 300, fpTempJson); 
 		fprintf(fpReqJson, "%s", shellBuffer); // write lines
 	}
 
 	fprintf(fpReqJson, "\"%s\"", imgContent); // write content 
 
-	for(i=0; i < 10; i++) {
+	for(i=0; i < 9; i++) {
 		fgets(shellBuffer, 300, fpTempJson); 
 		fprintf(fpReqJson, "%s", shellBuffer); // write lines
 	}
 
+	rewind(fpReqJson); // move pointer to first of FILE
+
+//	while(fgets(shellBuffer, 300, fpReqJson)) {
+//		system(shellBuffer);
+//	}
+
 	fclose(fpReqJson);
 
-	system("./vision-target.sh");  
+	system("./vision.sh");  
 	
 	/*** parsing http response JSON ***/
 	FILE * fpResJson = fopen("response.json", "rb");       
@@ -110,6 +116,7 @@ char *base64_encode(const unsigned char *data,
 		encoded_data[j++] = encoding_table[(triple >> 2 * 6) & 0x3F];
 		encoded_data[j++] = encoding_table[(triple >> 1 * 6) & 0x3F];
 		encoded_data[j++] = encoding_table[(triple >> 0 * 6) & 0x3F];
+			
 	}
 
 	for (i = 0; i < mod_table[input_length % 3]; i++)
@@ -131,7 +138,7 @@ void callGoogleVision(char *imageUrl) {
 
 	//Open file
 	char locUrl[100];
-	strcat(locUrl, "./");
+	strcpy(locUrl, "./");
 	strcat(locUrl, inputUrl);
 	file = fopen(locUrl, "rb");
 	if (!file)

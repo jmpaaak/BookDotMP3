@@ -1,0 +1,1 @@
+cmd_/home/user/6weekPractice/fnddrv.ko := arm-none-linux-gnueabi-ld -EL -r  -T /root/kernel/scripts/module-common.lds --build-id  -o /home/user/6weekPractice/fnddrv.ko /home/user/6weekPractice/fnddrv.o /home/user/6weekPractice/fnddrv.mod.o
