@@ -4,7 +4,7 @@
 
 void main() {
 
-	char *retStr = callGoogleVision("TST001.png");
+	char *retStr = callGoogleVision("TST001.bmp");
 	//printf("%s", retStr);
 
 	return;
