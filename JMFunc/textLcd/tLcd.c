@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -11,6 +9,8 @@
 #include <string.h>
 #include <fcntl.h>
 #include <unistd.h>
+
+#include "tLcd.h"
 
 #define TRUE		1
 #define FALSE		0
@@ -288,7 +288,7 @@ void doHelp(void)
 
 
 
-int main(int argc , char **argv)
+int setTLcd(int argc , char **argv)
 {
 
 	int nCmdMode;
@@ -407,4 +407,21 @@ int main(int argc , char **argv)
 	close(fd);
 	
 	return 0;
+}
+
+
+void loadTextTLcd(char * text) {
+	char * arg[6] = {" ", "c", "0", "0", "1", "15"};
+//	setTLcd(6, arg);
+
+	// clear
+	arg[1] = "r";
+	arg[2] = "1";
+	setTLcd(3, arg);
+
+	arg[1] = "w";
+	arg[2] = "1";
+	arg[3] = text;
+	setTLcd(6, arg);
+
 }

@@ -9,6 +9,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 
+#include "oLed.h"
+
 #define TRUE	1
 #define FALSE	0
 
@@ -456,7 +458,7 @@ int Init(void)
 
 static int Mode;
 
-int main(int argc , char **argv)
+int setOLed(int argc , char **argv)
 {
 	int writeNum;
 	unsigned char wdata[10];
@@ -594,4 +596,12 @@ int main(int argc , char **argv)
 
 
 	return 0;
+}
+
+
+void loadImgOLed(char * imgPath) {
+	char *arg[3] = {" ", "i", imgPath};
+	setOLed(2, arg);
+	arg[1] = "d";
+	setOLed(3, arg);
 }

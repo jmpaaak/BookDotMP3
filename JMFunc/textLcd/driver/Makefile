@@ -1,7 +1,5 @@
-
-
 obj-m := tlcddrv.o 
-KDIR := /home/cndi/project/kernel/ 
+KDIR := /root/kernel/ 
 PWD := $(shell pwd)
  
 export CROSS_COMPILE=arm-none-linux-gnueabi-

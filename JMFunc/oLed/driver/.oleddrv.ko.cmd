@@ -1,0 +1,1 @@
+cmd_/mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/oLed/driver/oleddrv.ko := arm-none-linux-gnueabi-ld -EL -r  -T /root/kernel/scripts/module-common.lds --build-id  -o /mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/oLed/driver/oleddrv.ko /mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/oLed/driver/oleddrv.o /mnt/hgfs/201221095_박종민/BookDotMP3/JMFunc/oLed/driver/oleddrv.mod.o
