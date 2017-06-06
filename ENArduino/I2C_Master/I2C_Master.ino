@@ -64,7 +64,7 @@ void loop() {
       i2cFlag = false;
     }
     rollUP_DC();
-    if ((currentMillis - previousMillis) > 1300)
+    if ((currentMillis - previousMillis) > 2500)
     {
       digitalWrite(IN3, LOW);
       digitalWrite(IN4, LOW);
@@ -81,7 +81,7 @@ void loop() {
       i2cFlag = false;
     }
     rollDOWN_DC();
-    if ((currentMillis - previousMillis) > 1300)
+    if ((currentMillis - previousMillis) > 400)
     {
       digitalWrite(IN3, LOW);
       digitalWrite(IN4, LOW);
@@ -99,7 +99,7 @@ void loop() {
       i2cFlag = false;
     }
     rollUP_DC();
-    if ((currentMillis - previousMillis) > 2000)
+    if ((currentMillis - previousMillis) > 700)
     {
       digitalWrite(IN3, LOW);
       digitalWrite(IN4, LOW);
