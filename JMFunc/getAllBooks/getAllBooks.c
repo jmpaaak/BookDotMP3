@@ -11,26 +11,32 @@
 
 #include "getAllBooks.h"
 
-char res[999][15];
 
 char** getAllBooks()
 {
+	int size = sizeof(char*) * 999;
+	char **books = (char **) malloc( size );
+
+	int i;
+	for(i=0; i<999; i++)
+		books[i] = (char *) malloc( 15 );
+
 	// max book num 999
 	int numOfBooks = 0;
 	system("wget -O index.html http://54.251.159.248/BookDotMP3/");
 	FILE * pIndex = fopen("index.html", "r");
 	char line[1000];
 	char * pTarget;
+
 	while(!feof(pIndex)) {
 		fgets(line, 1000, pIndex);
-			printf("%s\n", line);
 		if ((pTarget = strstr(line, "[DIR]")) != NULL) {
 			char * temp = strstr(pTarget, "href=\"");
 			char bookName[15];
 			int i = 0;
 
 			temp += 6;
-
+ 
 			while((*temp) != '/') {
 				bookName[i] = (*temp);
 				i++;
@@ -39,12 +45,11 @@ char** getAllBooks()
 			bookName[i] = '\0'; 
 
 			// add to list
-			strcpy(res[numOfBooks], bookName);
+			strcpy(books[numOfBooks], bookName);
 			numOfBooks++;
-			printf("%s\n", res[numOfBooks-1]);
 		}
 	}
 	
 	close(pIndex);
-	return res;
+	return books;
 }
