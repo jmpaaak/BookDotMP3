@@ -1,0 +1,14 @@
+The River and its Explorers\npriests. De Soto had twenty-four with him. LaSalle had several, also.\nThe ditions were often out of meat, and scant of clothes, b\nthey always had the furniture and other requisites for the mass they\nwere always prepared, as one of the quaint chroniclers of the time\nphrased it, to explain hell to the savages\nOn the 17th of June, 1673, the canoes of Joliet and\nMarquette and their five subordinates reached the junction of\nthe Wisconsin with the Mississippi. Mr. Parkman ·POST /v1/images:annotate?key=AIzaSyCct00PWxWPoXzilFo8BrgeAKawR9OiRZQ HTTP/1.1
+says: \"Before\nthem a wide and rapid current coursed athwart their way, by\nthe foot of lofty heights wrapped thick in forests. He contin-\nues: Turning southward, they paddled down the stream\nthrough a solitude unrelieved by the faintest trace of man.\"\nA big cat fish collided with Marquette's canoe.\nand startled him and reasonably enough, for he had\nbeen warned by the oding: chunked
+
+8000
+{
+  "responses": [
+    {
+      "textAnnotations": [
+        {
+          "locale": "en",
+          "description": "The River and its Explorers\npriests. De Soto had twenty-four with him. LaSalle had several, also.\nThe ditions were often out of meat, and scant of clothes, b\nthey always had the furniture and other requisites for the mass they\nwere always prepared, as one of the quaint chroniclers of the time\nphrased it, to explain hell to the savages\nOn the 17th of June, 1673, the canoes of Joliet and\nMarquette and their five subordinates reached the junction of\nthe Wisconsin with the Mississippi. Mr. Parkman ·POST /v1/images:annotate?key=AIzaSyCct00PWxWPoXzilFo8BrgeAKawR9OiRZQ HTTP/1.1
+Indians that he was on a foolhardy\njourney, and even a fatal one. for the river contained a\ndemon 'whose roar could be heard at a great distance,\nand who would engulf them in the abyss where he\ndwelt, I have seen a Mississippi catfish that was more\nthan six feet long, and weighed two hundred and fifty\npounds and if Marquette's fish was the fellow to that\none, he had a fair right to think the river's roaring de\nlength the buttalo began to appear, grazing in herds on\nthe great prairies which then borderud the rier and Marquette de\nscribes the fierce and stupid lok of the okd hulk as they stared ar the\nrs through the tangled\nmanewhich nearly hlinded them\nThe voyagers moved cautiously: Landed at night\nand made a fire to cook their evening meal; then extin.\nguished it, embarked again, paddled some way farther,\nand anchored in the stream, keeping a man on the\nwatch morning.'\nThey did this day after day and night after night;\nand at the end of two weeks they had not seen a human\nbeing. The river·POST /v1/images:annotate?key=AIzaSyCct00PWxWPoXzilFo8BrgeAKawR9OiRZQ HTTP/1.1
+ was an awful solitude, then. And it is\nnow, over most of its stretch.\n",
+          
